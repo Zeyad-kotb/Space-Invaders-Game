@@ -4,12 +4,19 @@
 
 Game::Game()
 {
+	music = LoadMusicStream("D:\\SpaceInvaders Course\\Sounds\\background music.ogg");
+	SetMusicVolume(music, 0.2f);
+	explosionSound = LoadSound("D:\\SpaceInvaders Course\\Sounds\\explosion.ogg");
+	SetSoundVolume(explosionSound, 0.5f);
+	PlayMusicStream(music);
 	InitGame();
 }
 
 Game::~Game()
 {
 	Alien::UnloadImages();
+	UnloadMusicStream(music);
+	UnloadSound(explosionSound);
 }
 
 void Game::Update()
@@ -223,6 +230,7 @@ void Game::CheckForCollisions()
 		{
 			if (CheckCollisionRecs(it->getRect(), laser.getRect()))
 			{
+				PlaySound(explosionSound);
 				if (it -> type == 1)
 				{
 					score += 100;
@@ -269,6 +277,7 @@ void Game::CheckForCollisions()
 			laser.active = false;
 			score += 500;
 			checkForHighscore();
+			PlaySound(explosionSound);
 		}
 	}
 

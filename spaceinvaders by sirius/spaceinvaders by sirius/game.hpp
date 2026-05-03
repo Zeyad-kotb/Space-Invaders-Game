@@ -16,6 +16,7 @@ public:
 	int lives;
 	int score;
 	int highscore;
+	Music music;
 private:
 	void DeleteInactiveLasers();
 	std::vector<Obstacle> CreateObstacles();
@@ -40,4 +41,5 @@ private:
 	MysteryShip mysteryship;
 	float mysteryShipSpawnInterval;
 	float timeLastSpawn;
+	Sound explosionSound;
 };

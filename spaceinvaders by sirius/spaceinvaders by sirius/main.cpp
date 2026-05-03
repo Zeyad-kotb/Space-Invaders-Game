@@ -18,6 +18,7 @@ int main()
 	int windowHeight = 700;
 
 	InitWindow(windowWidth + offset, windowHeight + 2 * offset, "Space Invaders By Sirius");
+	InitAudioDevice();
 
 	Font font = LoadFontEx("D:/SpaceInvaders Course/Font/monogram.ttf", 64, 0, 0);
 	Texture2D spaceshipImage = LoadTexture("D:/SpaceInvaders Course/Graphics/spaceship1.png");
@@ -28,6 +29,7 @@ int main()
 
 	while (WindowShouldClose() == false)
 	{
+		UpdateMusicStream(game.music);
 		game.HandleInput();
 		game.Update();
 		BeginDrawing();
@@ -64,4 +66,5 @@ int main()
 	}
 
 	CloseWindow();
+	CloseAudioDevice();
 }
