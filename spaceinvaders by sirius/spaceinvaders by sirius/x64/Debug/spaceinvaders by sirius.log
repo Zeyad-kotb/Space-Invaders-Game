@@ -1,8 +1,16 @@
-﻿  spaceship.cpp
-D:\SpaceInvaders Course\spaceinvaders by sirius\spaceinvaders by sirius\spaceship.cpp(6,47): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-D:\SpaceInvaders Course\spaceinvaders by sirius\spaceinvaders by sirius\spaceship.cpp(7,48): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-D:\SpaceInvaders Course\spaceinvaders by sirius\spaceinvaders by sirius\spaceship.cpp(38,47): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-D:\SpaceInvaders Course\spaceinvaders by sirius\spaceinvaders by sirius\spaceship.cpp(60,48): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+﻿  game.cpp
+D:\SpaceInvaders Course\spaceinvaders by sirius\spaceinvaders by sirius\game.hpp(39,51): warning C4305: 'initializing': truncation from 'double' to 'const float'
+  (compiling source file 'game.cpp')
+  
+D:\SpaceInvaders Course\spaceinvaders by sirius\spaceinvaders by sirius\game.cpp(34,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\SpaceInvaders Course\spaceinvaders by sirius\spaceinvaders by sirius\game.cpp(35,45): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+D:\SpaceInvaders Course\spaceinvaders by sirius\spaceinvaders by sirius\game.cpp(143,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+D:\SpaceInvaders Course\spaceinvaders by sirius\spaceinvaders by sirius\game.cpp(144,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+D:\SpaceInvaders Course\spaceinvaders by sirius\spaceinvaders by sirius\game.cpp(176,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+D:\SpaceInvaders Course\spaceinvaders by sirius\spaceinvaders by sirius\game.cpp(177,12): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+D:\SpaceInvaders Course\spaceinvaders by sirius\spaceinvaders by sirius\game.cpp(218,53): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+D:\SpaceInvaders Course\spaceinvaders by sirius\spaceinvaders by sirius\game.cpp(222,31): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\SpaceInvaders Course\spaceinvaders by sirius\spaceinvaders by sirius\game.cpp(365,43): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   spaceinvaders by sirius.vcxproj -> D:\SpaceInvaders Course\spaceinvaders by sirius\x64\Debug\spaceinvaders by sirius.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.

@@ -42,4 +42,5 @@ private:
 	float mysteryShipSpawnInterval;
 	float timeLastSpawn;
 	Sound explosionSound;
+	Sound gameOverSound;
 };

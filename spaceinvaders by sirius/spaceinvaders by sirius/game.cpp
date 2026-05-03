@@ -8,6 +8,9 @@ Game::Game()
 	SetMusicVolume(music, 0.2f);
 	explosionSound = LoadSound("D:\\SpaceInvaders Course\\Sounds\\explosion.ogg");
 	SetSoundVolume(explosionSound, 0.5f);
+	gameOverSound = LoadSound("D:\\SpaceInvaders Course\\Sounds\\game over.ogg");
+	SetSoundVolume(gameOverSound, 0.5f);
+
 	PlayMusicStream(music);
 	InitGame();
 }
@@ -17,6 +20,7 @@ Game::~Game()
 	Alien::UnloadImages();
 	UnloadMusicStream(music);
 	UnloadSound(explosionSound);
+	UnloadSound(gameOverSound);
 }
 
 void Game::Update()
@@ -343,6 +347,8 @@ void Game::CheckForCollisions()
 void Game::GameOver()
 {
 	run = false;
+	PlaySound(gameOverSound);
+	StopMusicStream(music);
 }
 
 void Game::InitGame()
@@ -404,4 +410,5 @@ void Game::Reset()
 	aliens.clear();
 	alienLasers.clear();
 	obstacles.clear();
+	PlayMusicStream(music);
 }
