@@ -411,4 +411,5 @@ void Game::Reset()
 	alienLasers.clear();
 	obstacles.clear();
 	PlayMusicStream(music);
+	StopSound(gameOverSound);
 }
