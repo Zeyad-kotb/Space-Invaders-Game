@@ -32,7 +32,7 @@ void Laser::Update()
 	position.y += speed;
 	if (active)
 	{
-		if (position.x > GetScreenHeight() - 100 || position.y < 25)
+		if (position.x > GetScreenHeight() - 50 || position.y < 25)
 		{
 			active = false;
 		}
